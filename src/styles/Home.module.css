@@ -1,0 +1,146 @@
+.index {
+	display: grid;
+	grid-template-columns: 600px 1fr;
+	gap: 50px;
+	align-items: center;
+	z-index: 3;
+	animation: opacity 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.inputContainer div h1 {
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+
+.inputContainer h1 span {
+	font-weight: bold;
+	background: -webkit-linear-gradient(
+		90deg,
+		rgba(235, 191, 50, 1) 0%,
+		rgba(236, 156, 49, 1) 100%
+	);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.inputContainer div p {
+	color: #bdbdbd;
+}
+
+.inputContainer > div {
+	margin: 30px 0;
+}
+
+.infoContainer > button:first-child {
+	background: linear-gradient(
+		90deg,
+		rgba(238, 96, 47, 1),
+		rgba(235, 191, 50, 1),
+		rgba(235, 191, 50, 1),
+		rgba(238, 96, 47, 1)
+	);
+	background-size: 200px;
+	padding: 10px 40px;
+	margin-right: 20px;
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+}
+
+.infoContainer > button:first-child:hover {
+	background-position: -200px;
+	right: -45px;
+}
+
+.infoContainer > button:last-child {
+	padding: 10px 40px;
+	margin-right: 20px;
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+}
+
+.infoContainer > button:last-child:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.responseContainer {
+	background-color: rgba(251, 171, 126, 0.2);
+	background-image: linear-gradient(
+		62deg,
+		rgba(238, 115, 47, 0.2) 0%,
+		rgba(235, 193, 50, 0.2) 100%
+	);
+	height: fit-content;
+	width: 100%;
+	border-radius: 15px;
+	backdrop-filter: blur(90%);
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.responseContainer:hover {
+	background-color: rgba(251, 171, 126, 0.9);
+	background-image: linear-gradient(
+		62deg,
+		rgba(238, 115, 47, 0.9) 0%,
+		rgba(235, 193, 50, 0.9) 100%
+	);
+}
+
+.responseContainer input {
+	padding: 15px 30px;
+	box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.7);
+	border: none;
+	border-radius: 2px;
+}
+
+.responseContainer button {
+	margin: 10px 0;
+	padding: 10px 40px;
+	font-size: 18px;
+	transition: all 0.2s linear;
+	border-radius: 2px;
+}
+
+.responseContainer button:hover {
+	background-color: rgba(235, 193, 50);
+}
+
+@media screen and (max-width: 768px) {
+	.index {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (min-width: 1980px) {
+	.container {
+		max-width: 1980px !important;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.infoContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.infoContainer button {
+		display: flex;
+		flex-direction: column;
+		margin: 10px 0px;
+	}
+}

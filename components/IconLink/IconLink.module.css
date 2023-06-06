@@ -1,0 +1,27 @@
+.icon div {
+	border-radius: 50%;
+	font-size: 24px;
+	color: #fff;
+	width: fit-content;
+	box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.2);
+	padding: 10px;
+	display: flex;
+	cursor: pointer;
+	transition: all 0.1s linear;
+}
+
+.icon div:hover {
+	background-color: #ed8b31;
+}
+
+.active {
+	background-color: #ed8b31;
+}
+
+.icon div:last-child {
+	margin-left: 20px;
+}
+
+.icon {
+	display: flex;
+}

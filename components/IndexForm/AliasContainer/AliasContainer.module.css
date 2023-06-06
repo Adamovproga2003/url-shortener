@@ -1,0 +1,60 @@
+.aliasContainer>button {
+    background-color: #F8F8F8;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    color: grey;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.addAliasButton {
+    color: #000 !important;
+}
+
+.aliasContainer button svg {
+    position: absolute;
+    color: #000;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+    z-index: 3;
+    transition: all .3s ease-in-out;
+
+}
+
+.isOpen>svg {
+    margin-left: 10px;
+    transform: rotate(45deg);
+}
+
+.aliasContainer button:hover>svg {
+    color: rgba(238, 96, 47, 1);
+}
+
+.aliasContainer input:focus~svg {
+    color: rgba(238, 96, 47, 1);
+}
+
+.aliasContainer input {
+    width: 100%;
+    position: relative;
+}
+
+.aliasInput span,
+.aliasInput svg {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    color: #000;
+}
+
+
+.success {
+    color: #EBBD32 !important;
+}
+
+.failed {
+    color: #ED5930 !important;
+}
