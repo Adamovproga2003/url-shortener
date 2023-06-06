@@ -6,8 +6,8 @@
   "/login": "pages/login.html",
   "/redirect/[alias]": "pages/redirect/[alias].html",
   "/register": "pages/register.html",
+  "/": "pages/index.js",
   "/pricing": "pages/pricing.js",
   "/features": "pages/features.js",
-  "/": "pages/index.js",
   "/404": "pages/404.html"
 }

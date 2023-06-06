@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import styles from './Header.module.css'
 import { HeaderProps } from './Header.props'
 import cn from 'classnames'
-import Image from 'next/image'
 import fluidPic from 'public/fluid.svg'
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -118,12 +117,7 @@ export const Header = ({
 					</div>
 				</div>
 				<div className={styles.decorContainer}>
-					<Image
-						src={fluidPic}
-						alt='Picture of the author'
-						blurDataURL='data:...'
-						placeholder='blur'
-					/>
+					<img src={fluidPic} alt='Picture of the author' placeholder='blur' />
 				</div>
 			</header>
 		</div>
