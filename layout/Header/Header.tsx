@@ -3,12 +3,13 @@ import { useRouter } from 'next/router'
 import styles from './Header.module.css'
 import { HeaderProps } from './Header.props'
 import cn from 'classnames'
-import fluidPic from 'public/fluid.svg'
+import fluidPic from './../../public/fluid.svg'
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MenuToggle } from './components/Menu/MenuToggle'
 import { Size, useWindowSize } from 'hooks/use-window-size'
 import { useAuth } from 'context/AuthContext'
+import Image from 'next/image'
 
 export const Header = ({
 	children,
@@ -117,7 +118,11 @@ export const Header = ({
 					</div>
 				</div>
 				<div className={styles.decorContainer}>
-					<img src={fluidPic} alt='Picture of the author' placeholder='blur' />
+					<Image
+						src={fluidPic}
+						alt='Picture of the author'
+						placeholder='blur'
+					/>
 				</div>
 			</header>
 		</div>
