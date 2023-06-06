@@ -86,7 +86,7 @@ const QRContainer = ({ children }: ModalContainerProps) => (
 
 export default withLayout(Home)
 
-export const getServerSideProps: GetServerSideProps = async context => {
+const getServerSideProps: GetServerSideProps = async context => {
 	const cookies = cookie.parse(context.req.headers.cookie || '')
 
 	if (!cookies.TOKEN) {

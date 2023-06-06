@@ -84,7 +84,7 @@ const Pricing: FC<IProps> = ({ isAuth, user }) => {
 
 export default withLayout(Pricing)
 
-export const getServerSideProps: GetServerSideProps = async context => {
+const getServerSideProps: GetServerSideProps = async context => {
 	const cookies = cookie.parse(context.req.headers.cookie || '')
 
 	if (!cookies.TOKEN) {
