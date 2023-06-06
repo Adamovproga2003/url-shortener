@@ -1,0 +1,9 @@
+.indexHeader div {
+	display: inline;
+}
+
+@media screen and (max-width: 616px) {
+	.indexHeader div {
+		display: block;
+	}
+}

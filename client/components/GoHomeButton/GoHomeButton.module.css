@@ -1,0 +1,23 @@
+.goHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3 linear;
+}
+
+.goHome:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.goHome svg {
+    transition: all 0.3s ease-in-out !important;
+}
+
+.goHome:hover svg {
+    transform: translateX(-5px);
+}

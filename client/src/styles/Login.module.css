@@ -1,0 +1,11 @@
+.formSignIn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.emailInput {
+    border-radius: .25rem .25rem 0 0 !important;
+}

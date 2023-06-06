@@ -1,0 +1,9 @@
+.translate {
+    transform: translateX(40px);
+    transition: all 1s ease-in-out;
+}
+
+.default {
+    transform: translateX(0px);
+    transition: all 1s ease-in-out;
+}

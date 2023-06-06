@@ -1,0 +1,74 @@
+.features {
+	backdrop-filter: blur(10px);
+	z-index: 1;
+	padding: 20px 10px;
+	animation: opacity 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.features > div {
+	display: flex;
+	padding: 20px 10px;
+	font-size: 20px;
+	align-items: center;
+}
+
+.features > div > div:last-child {
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+}
+
+.inProgressDiv {
+	padding: 0 !important;
+}
+
+.features > div > div:last-child > div:last-child {
+	padding: 0 10px;
+}
+
+.inProgress {
+	background-color: #ecaa31;
+	color: #000;
+	width: fit-content;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.inProgressAbsolute {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	color: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	backdrop-filter: blur(3px);
+	transition: all 0.5s linear;
+	animation: opacity 1.5s linear;
+	z-index: 2;
+}
+
+.inProgressAbsolute > div:last-child {
+	padding-left: 8px;
+}
+
+.inProgress:hover .inProgressAbsolute {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

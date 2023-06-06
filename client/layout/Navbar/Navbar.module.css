@@ -1,0 +1,10 @@
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
+}
