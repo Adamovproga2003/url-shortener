@@ -1,6 +1,13 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/_error": "pages/_error.js",
+  "/api/hello": "pages/api/hello.js",
+  "/login": "pages/login.html",
+  "/redirect/[alias]": "pages/redirect/[alias].html",
+  "/register": "pages/register.html",
+  "/features": "pages/features.js",
+  "/": "pages/index.js",
+  "/pricing": "pages/pricing.js",
+  "/404": "pages/404.html"
 }

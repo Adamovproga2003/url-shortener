@@ -2,7 +2,7 @@
 	"name": "client",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://Adamovproga2003/.github.io/url-shortener",
+	"homepage": "http://Adamovproga2003.github.io/url-shortener",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
